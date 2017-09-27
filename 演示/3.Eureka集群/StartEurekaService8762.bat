@@ -1,0 +1,1 @@
+java -jar C:\Users\吴文韬\Desktop\批处理指令\EurekaService\microservice_discovery_eureka_jar/microservice-discovery-eureka.jar --spring.profiles.active=peer2
