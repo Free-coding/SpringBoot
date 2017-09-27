@@ -475,18 +475,18 @@ eureka:
 ```
 &emsp;&emsp;将工程打包成jar包输出<br>
 &emsp;&emsp;&emsp;File-ProjectStructure<br>
-![](C:\Users\吴文韬\Desktop\演示\3.png)<br>
+![](https://raw.githubusercontent.com/lkysyzxz/SpringBoot/master/%E6%BC%94%E7%A4%BA/3.png)<br>
 &emsp;&emsp;&emsp;添加jar包，选择From model with depencies,把所依赖的jar包打包在一起<br>
-![](C:\Users\吴文韬\Desktop\演示\4.png)<br>
+![](https://raw.githubusercontent.com/lkysyzxz/SpringBoot/master/%E6%BC%94%E7%A4%BA/4.png)<br>
 &emsp;&emsp;&emsp;按如图所示选择<br>
-![](C:\Users\吴文韬\Desktop\演示\5.png)<br>
+![](https://raw.githubusercontent.com/lkysyzxz/SpringBoot/master/%E6%BC%94%E7%A4%BA/5.png)<br>
 &emsp;&emsp;&emsp;图中microservice-discovery-eureka.jar就是包含主程序的jar包,点ok<br>
-![](C:\Users\吴文韬\Desktop\演示\6.png)<br>
+![](https://raw.githubusercontent.com/lkysyzxz/SpringBoot/master/%E6%BC%94%E7%A4%BA/6.png)<br>
 &emsp;&emsp;&emsp;开始生成<br>
-![](C:\Users\吴文韬\Desktop\演示\7.png)<br>
-![](C:\Users\吴文韬\Desktop\演示\8.png)<br>
+![](https://raw.githubusercontent.com/lkysyzxz/SpringBoot/master/%E6%BC%94%E7%A4%BA/7.png)<br>
+![](https://raw.githubusercontent.com/lkysyzxz/SpringBoot/master/%E6%BC%94%E7%A4%BA/8.png)<br>
 &emsp;&emsp;&emsp;在工程目录中找到out文件夹，在里边把主程序和他的依赖jar包一起复制出来，编写Windows/Linux脚本,这是我之前生成的工程和编写的脚本。其中一个脚本文件的内容如下。（其中的换行可以不用管，我担心显示不齐<br>
-![](C:\Users\吴文韬\Desktop\演示\9.png)<br>
+![](https://raw.githubusercontent.com/lkysyzxz/SpringBoot/master/%E6%BC%94%E7%A4%BA/9.png)<br>
 ```
 java -jar
 C:\Users\吴文韬\Desktop\批处理指令\
@@ -494,9 +494,9 @@ EurekaService\microservice_discovery_eureka_jar/microservice-discovery-eureka.ja
 --spring.profiles.active=peer1
 ```
 &emsp;&emsp;接着运行两个不同的脚本.得到如下图所示<br>
-![](C:\Users\吴文韬\Desktop\演示\10.png)<br>
+![](https://raw.githubusercontent.com/lkysyzxz/SpringBoot/master/%E6%BC%94%E7%A4%BA/10.png)<br>
 &emsp;&emsp;访问 http://localhost:8761 也可以访问 http://localhost:8762 得到如下图所示(我之前写的application name 是microservice-discovery-eureka-ha)<br>
-![](C:\Users\吴文韬\Desktop\演示\11.png)<br>
+![](https://raw.githubusercontent.com/lkysyzxz/SpringBoot/master/%E6%BC%94%E7%A4%BA/11.png)<br>
 
 # 使用Ribbon实现负载均衡
 &emsp;&emsp;Ribbon需要整合在客户端中，在microservice-consumer-movie中添加依赖<br>
@@ -811,7 +811,7 @@ public class ZuulApplication {
 <br>
 # 其他
 &emsp;&emsp;该文档中阐述了如何编写微服务和部署微服务，但是还没有涉及到很多其中的内容，这些内容包括Hystrix的容错处理，以及微服务的安全认证及其组件中的安全认证机制。还有一些组件的配置如Feign配置的修改，Ribbon配置的修改，微服务配置的统一管理。本文档也没有涉及微服务的跟踪。<br>
-&emsp;&emsp;github:<br>
+&emsp;&emsp;github: https://github.com/lkysyzxz/SpringBoot/tree/master/演示 <br>
 <br>
 <br>
 <center>
